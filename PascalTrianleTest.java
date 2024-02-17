@@ -1,0 +1,44 @@
+package com.string.pack;
+
+import java.util.Scanner;
+
+public class PascalTrianleTest 
+{
+
+	public static void main(String[] args) 
+	{
+		
+		Scanner scn=new Scanner(System.in);
+		System.out.println(" Enter number to find Pascal Values  :) ");
+		 int rowNum=scn.nextInt();
+		 
+		 int [][] triangle =new int [rowNum][] ;
+		 
+		 
+		 for(int i=0; i<rowNum; i++)
+		 {
+			 triangle[i]=new int[i+1];
+			 triangle[i][0]=1;
+			 triangle[i][i]=1;
+			 
+			 for(int j=1; j<i; j++)
+			 {
+				 triangle[i][j] = triangle[i-1][j-1] + triangle[i-1][j];
+			 }
+		 }
+		 
+		 System.out.println(" Entered number is "+ rowNum +" Pascal values are ... ");
+		 for(int i=0; i<rowNum; i++)
+		 {
+			 for(int j=0; j<=i; j++)
+			 {
+				 System.out.print(triangle[i][j] + " ");
+			 }
+			 System.out.println();
+			 
+		 }
+		 System.out.println("                ");
+		 System.out.println("Finished... 👍🏻👍🏻");
+	}
+
+}
