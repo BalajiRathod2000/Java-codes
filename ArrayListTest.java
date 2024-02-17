@@ -1,22 +1,32 @@
-package com.dataStructure.ArrayList;
+package com.dataStructure.pack;
+
+import java.util.ArrayList;
 
 public class ArrayListTest 
 {
 
 	public static void main(String[] args) 
 	{
-
-		Arraylist al = new Arraylist();
-		al.add(10);
-		al.add(20);
-		al.add(30);
-		al.add(40);
-		al.add(50);
+		ArrayList a1 = new ArrayList();
+	
+		a1.add(10);
+		a1.add("String");
+		a1.add(10.5);
+		a1.add(true);
+		a1.add(10);
+		a1.remove(1);
 		
-		for(int i=0; i<=al.size(); i++)
+		System.out.println(a1); // output :- [10, 10.5, true, 10]
+		
+		for(int i=0; i<a1.size(); i++)
 		{
-			System.out.println(al);
+			System.out.println(a1.get(i));  
 		}
 	}
-
 }
+
+
+// output:-     //  10
+				//	10.5
+				//  true
+				//  10
