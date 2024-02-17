@@ -1,0 +1,23 @@
+package com.ArrayProgram.pack;
+
+public class ReverseOfArray 
+{
+
+	public static void main(String[] args) 
+	{
+	
+        int[]a= {1,2,3,4};
+        
+       for(int i=a.length-1 ;i>=0; i--)
+        {
+        	System.out.println(a[i]);
+        }   
+   }
+}
+
+// output:- 4
+//			3
+//			2
+//			1
+
+
