@@ -1,15 +1,15 @@
-package com.dataStructure.pack;
+package com.setImplmenet.pack;
 
 public class Node 
-{	
-	
-	Object ele;
+{
+	int key;
 	Node next;
 	
-	public Node(Object e, Node n)
+	
+	public Node(int k, Node n)
 	{
-		ele = e;
-		next = n;
-		
+		key=k;
+		next=n;
 	}
+	
 }
